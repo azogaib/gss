@@ -1,10 +1,256 @@
-* {
+/* -------------------------------
+
+CSS Reset
+
+---------------------------------- */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family: 'Poppins', sans-serif !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
-article, aside, details, figcaption, figure, footer, header, main, nav, section, summary {
-    display:block;
+/* -------------------------------
+
+Universal CSS
+
+---------------------------------- */
+.logo {
+	margin: 10px;
 }
 
+main {
+	padding-top: 55px;
+}
+
+#main-nav {
+	background-color: #ffff00 !important;
+	box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.navbar {
+	--bs-navbar-padding-y: 0rem !important;
+	--bs-navbar-nav-link-padding-x: 1.2rem !important;
+}
+
+.navbar-nav {
+	--bs-nav-link-padding-y: 1.5rem !important;
+}
+
+.navbar .active {
+	color: #ffff00 !important;
+	background-color: #000;
+	background: linear-gradient(45deg, #ffff00 26%, #000 10%, #000 74%, #ffff00 0%);
+	font-weight: 400 !important;
+}
+
+#kart .nav-link:hover {
+	color: #ffff00 !important;
+	background-color: #000 !important;
+	background: #000 !important;
+	font-weight: 400 !important;
+}
+
+.navbar .nav-link:hover {
+	color: #ffff00 !important;
+	background-color: #000;
+	background: linear-gradient(45deg, #ffff00 26%, #000 10%, #000 74%, #ffff00 0%);
+	font-weight: 400 !important;
+}
+
+.navbar .active:hover {
+	color: #ffff00 !important;
+}
+
+#kart{
+	width: 50px !important;
+}
+
+.nav-item {
+	width: 200px !important;
+	text-align: center;
+}
+
+.nav-link:focus, .nav-link {
+    color: #000 !important;
+	font-weight: 500 !important;
+}
+
+.carousel-caption {
+	text-transform: uppercase;
+}
+
+.carousel-indicators [data-bs-target] {
+	background-color: #000000 !important;
+	height: 4px !important;
+}
+
+.carousel-control-prev-icon {
+	background-image: url("images/prev-icon.svg") !important;
+}
+
+.carousel-control-next-icon {
+	background-image: url("images/next-icon.svg") !important;
+}
+
+.btn-outline-dark {
+    --bs-btn-border-color: #000000 !important;
+    --bs-btn-hover-color: #ffff00 !important;
+    --bs-btn-hover-bg: #000000 !important;
+    --bs-btn-hover-border-color: #000000 !important;
+    --bs-btn-focus-shadow-rgb: 33,37,41;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #000000 !important;
+    --bs-btn-active-border-color: #000000 !important;
+    --bs-btn-active-shadow: inset 0 3px 5pxrgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #999999 !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #999999 !important;
+    --bs-gradient: none;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	--bs-btn-border-width: 4px !important;
+	--bs-btn-color: #000000 !important;
+}
+
+.banner {
+font-weight: 700 !important;
+}
+
+.carousel-caption {
+	color: #000000 !important;
+}
+
+.bg-white {
+	background-color: #ffffff;
+}
+
+.bg-light-grey {
+	background-color: #cccccc;
+}
+
+.bg-yellow {
+	background-color: #ffff00;
+}
+
+.bg-contact {
+	background: linear-gradient(45deg, #ffffff 70%, #ffff00 30%);
+}
+
+.section-padding {
+	padding: 40px 0 40px 0;
+}
+
+.benefits {
+	color: #666;
+}
+
+footer {
+	background: linear-gradient(45deg, #000000 60%, #ffff00 40%);
+}
+
+.disclaimer {
+	font-size: 0.8rem;
+	color: #666;
+}
+
+.social-icons a {
+	color: #000;
+}
+
+.social-icons a:hover {
+	color: #666;
+}
+
+.footer-contact {
+	color: #000;
+}
+
+.footer-contact a {
+	text-decoration: none;
+	color: #000;
+}
+
+.footer-contact a:hover {
+	color: #666;
+}
+
+.sub-nav a {
+	text-decoration: none;
+	color: #666;
+}
+
+.sub-nav a :hover{
+	text-decoration: none;
+	color: #ffff00;
+}
+
+
+@media screen and (max-width: 991px) {
+    .disclaimer {
+        padding-top: 30px;
+		text-align: center;
+    }
+	.social-icons a {
+		color: #ffff00;
+	}
+	footer {
+		background: linear-gradient(45deg, #000000 75%, #ffff00 25%);
+	}
+	.footer-contact {
+		text-align: center;
+	}
+	.footer-contact a {
+		color: #666;
+	}
+	.footer-contact a:hover {
+		color: #ffff00;
+	}
+	.footer-contact {
+		color: #666;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	#kart, .nav-item {
+		width: 100% !important;
+	}
