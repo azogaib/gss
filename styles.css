@@ -231,29 +231,48 @@ Timeline
 
 --------------------------------- */
 
-.timeline {
-	border-left: 1px solid;
-	position: relative;
-	list-style: none;
-}
-
-.timeline .timeline-item {
+.main-timeline {
 	position: relative;
 }
 
-.timeline .timeline-item:after {
-	position: absolute;
-	display: block;
-	top: 0;
-}
-
-.timeline .timeline-item:after {
-	background-color: #000;
-	left: -38px;
-	border-radius: 50%;
-	height: 10px;
-	width: 10px;
+.main-timeline::after {
 	content: "";
+	position: absolute;
+	width: 2px;
+	background-color: #555;
+	top: 0;
+	bottom: 0;
+	left: 50%;
+}
+
+.timeline {
+	position: relative;
+	width: 50%;
+}
+
+.timeline::after {
+	content: "";
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	right: -6px;
+	top: 0;
+	background-color: #555;
+	border-radius: 50%;
+}
+
+.left {
+	padding: 0 3%;
+	text-align: end;
+}
+
+.right {
+	padding: 0 3%;
+	left: 50%;
+}
+
+.right::after {
+	left: -4px;
 }
 
 
@@ -279,6 +298,26 @@ Timeline
 	}
 	.footer-contact {
 		color: #666;
+	}
+
+	/* timeline on mobile */
+	.main-timeline::after {
+		left: 5%;
+	}
+
+	.timeline {
+		width: 100%;
+		padding: 0 8% 0 5%;
+	}
+
+	.left, .right {
+		text-align: start;
+		left: 5%;
+	}
+
+	.left::after,
+	.right::after {
+		left: -1%;
 	}
 }
 
