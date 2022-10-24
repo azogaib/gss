@@ -225,6 +225,38 @@ footer {
 }
 
 
+/* --------------------------------
+
+Timeline
+
+--------------------------------- */
+
+.timeline {
+	border-left: 1px solid;
+	position: relative;
+	list-style: none;
+}
+
+.timeline .timeline-item {
+	position: relative;
+}
+
+.timeline .timeline-item:after {
+	position: absolute;
+	display: block;
+	top: 0;
+}
+
+.timeline .timeline-item:after {
+	background-color: #000;
+	left: -38px;
+	border-radius: 50%;
+	height: 10px;
+	width: 10px;
+	content: "";
+}
+
+
 @media screen and (max-width: 991px) {
     .disclaimer {
         padding-top: 30px;
