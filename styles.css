@@ -328,6 +328,10 @@ Timeline
 	.right::after {
 		left: -1%;
 	}
+
+	.map {
+		order: 6;
+	}
 }
 
 @media screen and (max-width: 1199px) {
