@@ -296,6 +296,7 @@ Company Page
 	color: #555;
   }
 
+
 /* --------------------------------
 
 Product Page
@@ -435,6 +436,10 @@ Media Queries
 
 	.map {
 		order: 6;
+	}
+
+	#employment-banner {
+		left: 5%;
 	}
 }
 
