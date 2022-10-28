@@ -282,6 +282,11 @@ Product Page
 
 --------------------------------- */
 
+.distributor-form {
+	border: 2px solid #000 !important;
+}
+
+
 
 
 
@@ -334,6 +339,10 @@ End Product Page
 	.left::after,
 	.right::after {
 		left: -1%;
+	}
+
+	.map {
+		order: 6;
 	}
 }
 
