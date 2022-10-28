@@ -176,6 +176,10 @@ font-weight: 700 !important;
 	background: linear-gradient(45deg, #ffffff 70%, #ffff00 30%);
 }
 
+.bg-split {
+	background: linear-gradient(90deg, #ffff00 50%, #000000 50%);
+}
+
 .section-padding {
 	padding: 40px 0 40px 0;
 }
@@ -275,6 +279,15 @@ Timeline
 	left: -4px;
 }
 
+/* -------------------------------
+
+Meet the Team
+
+--------------------------------- */
+.staff {
+	outline: 10px solid #000;
+	outline-offset: -4px;
+  }
 
 /* --------------------------------
 
@@ -338,6 +351,34 @@ End Product Page
 --------------------------------- */
 
 
+
+
+/* -------------------------------
+
+Social Feed
+
+--------------------------------- */
+
+.lightwidget__lightbox {
+	z-index: 10000 !important;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.lightwidget-hide-scrollbar::-webkit-scrollbar {
+	display: none;
+}
+/* Hide scrollbar for IE, Edge add Firefox */
+.lightwidget-hide-scrollbar {
+	-ms-overflow-style: none;
+	scrollbar-width: none; /* Firefox */
+}
+
+/* -------------------------------
+
+Media Queries
+
+--------------------------------- */
+
 @media screen and (max-width: 991px) {
     .disclaimer {
         padding-top: 30px;
@@ -360,6 +401,9 @@ End Product Page
 	}
 	.footer-contact {
 		color: #666;
+	}
+	.bg-split {
+		background: linear-gradient(145deg, #ffff00 40%, #000000 25%);
 	}
 
 	/* timeline on mobile */
@@ -391,3 +435,4 @@ End Product Page
 	#kart, .nav-item {
 		width: 100% !important;
 	}
+}
