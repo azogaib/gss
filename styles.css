@@ -231,9 +231,15 @@ footer {
 
 /* --------------------------------
 
-Timeline
+Company Page
 
 --------------------------------- */
+
+.company {
+	color: #666;
+}
+
+/* Timeline */
 
 .main-timeline {
 	position: relative;
@@ -279,14 +285,15 @@ Timeline
 	left: -4px;
 }
 
-/* -------------------------------
+/* Meet the Team */
 
-Meet the Team
-
---------------------------------- */
 .staff {
 	outline: 10px solid #000;
 	outline-offset: -4px;
+  }
+
+  .team-links:hover {
+	color: #555;
   }
 
 /* --------------------------------
