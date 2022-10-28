@@ -292,7 +292,11 @@ Company Page
 	outline-offset: -4px;
   }
 
-  .team-links:hover {
+  .team-links a {
+	color: #000;
+  }
+
+  .team-links a:hover {
 	color: #555;
   }
 
@@ -426,7 +430,7 @@ Media Queries
 
 	.left, .right {
 		text-align: start;
-		left: 5%;
+		left: 2%;
 	}
 
 	.left::after,
