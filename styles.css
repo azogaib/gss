@@ -307,8 +307,8 @@ Product Page
 
 --------------------------------- */
 
-.distributor-form {
-	border: 2px solid #000 !important;
+.distributor-form, .contact-form {
+	border: 2px solid #555 !important;
 }
 
 .product-hero {
