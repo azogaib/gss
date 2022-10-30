@@ -54,6 +54,7 @@ table {
 Universal CSS
 
 ---------------------------------- */
+
 .logo {
 	margin: 10px;
 }
@@ -152,7 +153,11 @@ main {
 	--bs-btn-color: #000000 !important;
 }
 
-.banner {
+#hero .btn-outline-dark {
+	--bs-btn-bg: #ffff00 !important;
+}
+
+.banner span {
 font-weight: 700 !important;
 }
 
@@ -187,6 +192,12 @@ font-weight: 700 !important;
 .benefits {
 	color: #666;
 }
+
+/* --------------------------------
+
+Footer
+
+--------------------------------- */
 
 footer {
 	background: linear-gradient(45deg, #000000 60%, #ffff00 40%);
@@ -228,6 +239,10 @@ footer {
 	color: #ffff00;
 }
 
+footer hr {
+	border: 1px solid #666;
+	margin: 40px 0;
+  }
 
 /* --------------------------------
 
@@ -240,6 +255,15 @@ Company Page
 }
 
 /* Timeline */
+
+#history h3 {
+	font-size: calc(1rem + .6vw) !important;
+}
+
+#team h3 {
+	font-size: calc(1.1rem + .6vw) !important;
+	font-weight: 600;
+}
 
 .main-timeline {
 	position: relative;
@@ -288,18 +312,38 @@ Company Page
 /* Meet the Team */
 
 .staff {
-	outline: 10px solid #000;
-	outline-offset: -4px;
-  }
+	/* outline: 10px solid #000;
+	outline-offset: -4px; */
+	border: 10px solid #000;
+	background-color: #000;
+}
 
-  .team-links a {
+.team-links a {
 	color: #000;
-  }
+}
 
-  .team-links a:hover {
+.team-links a:hover {
 	color: #555;
-  }
+}
 
+/* Employment Opportunities */
+
+#employment h2 {
+	color: #ffff00;
+	font-size: calc(2.3rem + .6vw) !important;
+	font-weight: 600;
+}
+
+#employment span {
+	background-color: #000000aa;
+	padding: 10px;
+	color: #ffff00;
+	display: inline-block;
+}
+
+#employment .btn-outline-dark {
+	--bs-btn-bg: #ffff00 !important;
+}
 
 /* --------------------------------
 
@@ -316,50 +360,50 @@ Product Page
 	width: 100%;
 }
   
-  .dropdown {
+.dropdown {
 	position: relative;
 	display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
 	display: none;
 	position: absolute;
 	background-color: #f9f9f9;
 	min-width: 160px;
 	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 	z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
-  }
-  
-  .dropdown-content a:hover {background-color: #ffff00}
-  
-  .dropdown:hover .dropdown-content {
-	display: block;
-  }
-  
-  .dropdown:hover .dropbtn {
-	background-color: black;
-  }
+}
 
-  .replacement {
+.dropdown-content a:hover {
+	background-color: #ffff00
+}
+
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+.dropdown:hover .dropbtn {
+	background-color: black;
+}
+
+.replacement {
 	background-color: black;
 	color: #cccccc;
-  }
+}
 
-  .manual {
+.manual {
 	background-color: #ffff00;
-  }
+}
 
 /* --------------------------------
-
 End Product Page
-
 --------------------------------- */
 
 
@@ -392,6 +436,10 @@ Media Queries
 --------------------------------- */
 
 @media screen and (max-width: 991px) {
+	.banner span {
+		background-color: #ffff00aa;
+		display: inline-block;
+	}
     .disclaimer {
         padding-top: 30px;
 		text-align: center;
@@ -442,8 +490,8 @@ Media Queries
 		order: 6;
 	}
 
-	#employment-banner {
-		left: 5%;
+	#employment h2 {
+		font-size: calc(1.5rem + .6vw) !important;
 	}
 }
 
