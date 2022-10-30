@@ -1,7 +1,8 @@
 // Stop page refresh to show message
-var form = document.getElementById("distributorForm");
+var form = document.getElementById("contactForm");
 function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
+
 
 // Thank you message
 const thankYou = document.getElementById('liveThankYou')
