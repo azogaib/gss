@@ -153,6 +153,26 @@ main {
 	--bs-btn-color: #000000 !important;
 }
 
+.btn-outline-light {
+    --bs-btn-border-color: #cccccc !important;
+    --bs-btn-hover-color: #000000 !important;
+    --bs-btn-hover-bg: #cccccc !important;
+    --bs-btn-hover-border-color: #cccccc !important;
+    --bs-btn-focus-shadow-rgb: 33,37,41;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: #cccccc !important;
+    --bs-btn-active-border-color: #cccccc !important;
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #999999 !important;
+    --bs-btn-disabled-bg: transparent;
+    --bs-btn-disabled-border-color: #999999 !important;
+    --bs-gradient: none;
+	text-transform: uppercase;
+	font-weight: bold !important;
+	--bs-btn-border-width: 4px !important;
+	--bs-btn-color: #cccccc !important;
+}
+
 #hero .btn-outline-dark {
 	--bs-btn-bg: #ffff00 !important;
 }
@@ -355,14 +375,43 @@ Product Page
 	border: 2px solid #555 !important;
 }
 
-.product-hero {
-	background-image: url("images/gss-asset-21.jpg");
-	width: 100%;
+.product-hero-img {
+	position: relative;
+	background: #ffff00;
+}
+
+.product-hero-section {  
+	position: absolute;
+	top: 95px;
+	background-color: rgba(255, 255, 0, 0.7);
+}
+
+.product-choices {
+	text-align: center;
+	padding: 8% 0 0;
+}
+
+.product-choices img {
+	padding-bottom: 35px;
+}
+
+.product-choices a {
+	color: black;
+}
+
+.product-choices a:hover {
+	color: #ffff00;
+}
+
+.product-info {
+	text-align: left;
+	padding: 2% 0;
 }
   
 .dropdown {
 	position: relative;
 	display: inline-block;
+	margin-bottom: 70px;
 }
 
 .dropdown-content {
@@ -393,14 +442,26 @@ Product Page
 	background-color: black;
 }
 
+.section-2 {
+	text-align: center;
+}
+
+.section-2 .btn {
+	margin-top: 20px;
+}
+
 .replacement {
 	background-color: black;
 	color: #cccccc;
+	padding: 12%;
 }
 
 .manual {
 	background-color: #ffff00;
+	padding: 10%;
 }
+
+
 
 /* --------------------------------
 End Product Page
@@ -500,3 +561,25 @@ Media Queries
 		width: 100% !important;
 	}
 }
+
+@media (min-width: 991px) {
+	/* Product Page */
+	.product-choices {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.section-2 {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.replacement {
+		width: 50%;
+	}
+	.manual {
+		width: 50%;
+	}
+
+}
+
