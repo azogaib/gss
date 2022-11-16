@@ -1,14 +1,14 @@
 // Stop page refresh to show message
-var form = document.getElementById("contactForm");
+var form = document.querySelector('#contactForm, #distributorForm');
 function handleForm(event) { event.preventDefault(); }
 form.addEventListener('submit', handleForm);
 
 
 // Thank you message
-const thankYou = document.getElementById('liveThankYou')
+var thankYou = document.querySelector('#liveThankYou, #distributorThankYou')
 
-const alert = (message, type) => {
-    const wrapper = document.createElement('div')
+var alert = (message, type) => {
+    var wrapper = document.createElement('div')
     wrapper.innerHTML = [
         `<div class="alert alert-${type} alert-dismissible" role="alert">`,
         `<div>${message}</div>`,
@@ -19,7 +19,7 @@ const alert = (message, type) => {
     thankYou.append(wrapper)
 }
 
-const alertTrigger = document.getElementById('liveThankYouBtn')
+var alertTrigger = document.querySelector('#liveThankYouBtn, #distributorThankYouBtn')
 if (alertTrigger) {
     alertTrigger.addEventListener('click', () => {
         alert('Thank You. We will be in touch!', 'dark')
