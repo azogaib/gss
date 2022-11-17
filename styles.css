@@ -346,12 +346,12 @@ Company Page
 .staff {
 	/* outline: 10px solid #000;
 	outline-offset: -4px; */
-	border: 5px solid #CCC;
-	background-color: #CCC;
+	border: 7px solid #000;
+	background-color: #000;
 }
 
 .team-links a {
-	color: #CCC;
+	color: #000;
 }
 
 .team-links a:hover {
