@@ -346,16 +346,20 @@ Company Page
 .staff {
 	/* outline: 10px solid #000;
 	outline-offset: -4px; */
-	border: 5px solid #CCC;
-	background-color: #CCC;
+	border: 7px solid #ffff00;
+	background-color: #ffff00;
+}
+
+.text-yellow {
+	color: #ffff00;
 }
 
 .team-links a {
-	color: #CCC;
+	color: #ffff00;
 }
 
 .team-links a:hover {
-	color: #ffff00;
+	color: #ccc;
 }
 
 
