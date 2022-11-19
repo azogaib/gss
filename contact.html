@@ -40,6 +40,7 @@
 			<nav id="main-nav" class="navbar navbar-expand-xl fixed-top bg-light">
 				<div class="container-fluid">
 				  <a class="navbar-brand" href="index.html"><img class="logo" src="images/gss-logo.svg" height="40" alt="GSS logo"></a>
+				  <a href="#main" class="visually-hidden-focusable text-black">Skip to main content</a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -58,7 +59,7 @@
 						<a class="nav-link active" href="contact.html">CONTACT</a>
 					  </li>
 					  <li class="nav-item" id="kart">
-						<a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+						<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></a>
 					  </li>
 					</ul>
 				  </div>
@@ -66,7 +67,7 @@
 			  </nav>
 		</header>
 		
-		<main>
+		<main id="main">
 			<section class="bg-contact section-padding">
 				<div class="container">
 					<div class="row gx-5">
@@ -75,7 +76,7 @@
 							<p>Send us a message and we’ll get back to you soon!</p>
 							<!--<svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="570px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666666"></rect><text x="45%" y="50%" fill="#ccc" dy=".3em">FORM</text></svg>-->
 						
-							<form action="" id="contactForm">
+							<form action="mainContact" id="contactForm">
 								<div class="form-group mb-3">
 									<label for="contactName" class="form-label"><strong>Name</strong></label>
 									<input type="text" class="form-control contact-form" id="contactName">
@@ -86,8 +87,8 @@
 								</div>
 								<div class="form-group mb-3">
 									<label for="contactSelect" class="form-label"><strong>Select a Topic:</strong></label>
-									<select class="form-select contact-form" aria-label="Default select example">
-										<option selected></option>
+									<select class="form-select contact-form" aria-label="Default select example" id="contactSelect">
+										<option selected>&nbsp;</option>
 										<option value="1">Trade Shows</option>
 										<option value="2">Find or Become a Distributor</option>
 										<option value="3">Product Questions</option>
@@ -103,6 +104,18 @@
 							</form>
 						</div>
 					</div>
+				</div>
+			</section>
+
+			<!-- Shopping Cart-->
+			<section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header bg-yellow">
+					<h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body bg-black text-light-grey">
+					<p>Your cart is empty</p>
+					<p><a class="btn btn-outline-light" href="#" data-bs-dismiss="offcanvas">CONTINUE SHOPPING</a></p>
 				</div>
 			</section>
 		</main>

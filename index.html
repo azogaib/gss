@@ -40,6 +40,7 @@
 			<nav id="main-nav" class="navbar navbar-expand-xl fixed-top bg-light">
 				<div class="container-fluid">
 				  <a class="navbar-brand" href="index.html"><img class="logo" src="images/gss-logo.svg" height="40" alt="GSS logo"></a>
+				  <a href="#main" class="visually-hidden-focusable text-black">Skip to main content</a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -58,7 +59,7 @@
 						<a class="nav-link" href="contact.html">CONTACT</a>
 					  </li>
 					  <li class="nav-item" id="kart">
-						<a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+						<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></a>
 					  </li>
 					</ul>        
 				  </div>
@@ -137,28 +138,28 @@
 			</div>
 			  
 			<!-- Three columns for product benefits -->
-			<section class="bg-white section-padding">
+			<section id="main" class="bg-white section-padding">
 				<div class="container benefits">
 					<div class="row gx-5 gy-5 py-5">
 						<div class="col-lg-4">
 							<p class="text-center">
-								<i class="fa-solid fa-truck-moving fa-flip-horizontal fa-4x"></i>
-								<i class="fa-solid fa-car-burst fa-3x"></i>
+								<i class="fa-solid fa-truck-moving fa-flip-horizontal fa-4x" aria-hidden="true"></i>
+								<i class="fa-solid fa-car-burst fa-3x" aria-hidden="true"></i>
 							</p>
 							<h3 class="fw-semibold text-center">Avoid Truck Accidents</h3>
 							<p>Did you know that nearly 30% of all commercial vehicle accidents are caused by reversing? Global Sensor Systems reduces backing accidents by 80% with a sensor technology unlike any other currently on the market. This statistic exceeds the 16% accident prevention attested to back up cameras alone.</p>
 						</div>
 						<div class="col-lg-4">
 							<p class="text-center">
-								<i class="fa-solid fa-truck-moving fa-flip-horizontal fa-4x"></i>
-								<i class="fa-solid fa-person-walking-dashed-line-arrow-right fa-flip-horizontal fa-3x"></i>
+								<i class="fa-solid fa-truck-moving fa-flip-horizontal fa-4x" aria-hidden="true"></i>
+								<i class="fa-solid fa-person-walking-dashed-line-arrow-right fa-flip-horizontal fa-3x" aria-hidden="true"></i>
 							</p>
 							<h3 class="fw-semibold text-center">Protect Your People</h3>
 							<p>Our automatic braking system utilizes technology that immediately prevents collision the moment an object is detected in the way of the vehicle. This means accidents caused by reversing are completely eliminated with our technology. Improve fleet safety and protect pedestrians.</p>
 						</div>
 						<div class="col-lg-4">
 							<p class="text-center">
-								<i class="fa-solid fa-road-circle-check fa-4x"></i>
+								<i class="fa-solid fa-road-circle-check fa-4x" aria-hidden="true"></i>
 							</p>
 							<h3 class="fw-semibold text-center">Ensure Fleet Driver Safety</h3>
 							<p>We have found that the number one concern for fleet managers is the safety of operation. Typically, blind spots are a major concern as vehicle size increases. Eliminate the risk of reaction time and human error with GSS.</p>
@@ -176,6 +177,18 @@
 						<iframe src="https://cdn.lightwidget.com/widgets/7fbee10a4409598dbb87a07660091054.html" class="lightwidget-widget d-none d-sm-block d-sm-none d-md-block lightwidget-hide-scrollbar" style="width:100%;border:0;overflow:hidden;"></iframe>
 						<iframe src="https://cdn.lightwidget.com/widgets/665d55d5cd275b4d82a2fedabc9620a0.html" class="lightwidget-widget lightwidget-hide-scrollbar d-md-none d-lg-block d-lg-none d-xl-block d-xl-none d-xxl-block d-xxl-none" style="width:100%;border:0;overflow:hidden;"></iframe>
 					</div>
+				</div>
+			</section>
+
+			<!-- Shopping Cart-->
+			<section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header bg-yellow">
+					<h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body bg-black text-light-grey">
+					<p>Your cart is empty</p>
+					<p><a class="btn btn-outline-light" href="#" data-bs-dismiss="offcanvas">CONTINUE SHOPPING</a></p>
 				</div>
 			</section>
 		</main>
@@ -210,16 +223,16 @@
 						<div class="container text-center social-icons">
 							<div class="row pt-3 gy-3">
 								<div class="col">
-									<a href="https://www.instagram.com/gss.brake" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a>
+									<a href="https://www.instagram.com/gss.brake" target="_blank"><i class="fa-brands fa-instagram fa-2xl" aria-hidden="true"></i><span class="fa-sr-only">Instagram</span></a>
 								</div>
 								<div class="col">
-									<a href="https://www.facebook.com/gss.brake" target="_blank"><i class="fa-brands fa-facebook fa-2xl"></i></a>
+									<a href="https://www.facebook.com/gss.brake" target="_blank"><i class="fa-brands fa-facebook fa-2xl" aria-hidden="true"></i><span class="fa-sr-only">Facebook</span></a>
 								</div>
 								<div class="col">
-									<a href="https://twitter.com/gssbrake" target="_blank"><i class="fa-brands fa-twitter fa-2xl"></i></a>
+									<a href="https://twitter.com/gssbrake" target="_blank"><i class="fa-brands fa-twitter fa-2xl" aria-hidden="true"></i><span class="fa-sr-only">Twitter</span></a>
 								</div>
 								<div class="col">
-									<a href="https://www.youtube.com/channel/UCL26K7bFOv9O7_XakLBhgMQ" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a>
+									<a href="https://www.youtube.com/channel/UCL26K7bFOv9O7_XakLBhgMQ" target="_blank"><i class="fa-brands fa-youtube fa-2xl" aria-hidden="true"></i><span class="fa-sr-only">YouTube</span></a>
 								</div>
 							</div>
 						</div>

@@ -40,6 +40,7 @@
 			<nav id="main-nav" class="navbar navbar-expand-xl fixed-top bg-light">
 				<div class="container-fluid">
 				  <a class="navbar-brand" href="index.html"><img class="logo" src="images/gss-logo.svg" height="40" alt="GSS logo"></a>
+				  <a href="#main" class="visually-hidden-focusable text-black">Skip to main content</a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -58,7 +59,7 @@
 						<a class="nav-link" href="contact.html">CONTACT</a>
 					  </li>
 					  <li class="nav-item" id="kart">
-						<a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+						<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></a>
 					  </li>
 					</ul>
 				  </div>
@@ -66,7 +67,7 @@
 			  </nav>
 		</header>
 		
-		<main>
+		<main id="main">
 			<section class="bg-black section-padding" id="products">
 				<div class="container product">
 					<div class="row gx-1 align-items-end">
@@ -94,8 +95,8 @@
 									<div class="text-center">
 										<img src="images/gss-asset-19.png" class="img-fluid col-lg-8 col-sm-8" width="1000" alt="Global Sensor Systems Automatic Braking System">
 									</div>
-									<h2 class="text-center pt-4 text-black">Automatic</h2>
-									<div class="col-xl-10 offset-xl-1 text-black">
+									<h2 class="text-center pt-4 text-dark">Automatic</h2>
+									<div class="col-xl-10 offset-xl-1 text-dark">
 										<p>These braking systems are simple to install, simple to learn, and simple to use!</p>
 										<p>Our systems decrease backing accidents and prevent people, whether it be the driver or the pedestrian behind the moving vehicle, from getting hurt.</p>
 										<div class="accordion accordion-flush mb-4" id="accordionFlushAutomatic">
@@ -131,7 +132,7 @@
 												<a href="#">4</a>
 											</div>
 										</div>
-										<button class="col-3 btn btn-lg btn-outline-dark"><i class="fa-solid fa-cart-shopping"></i></button>
+										<button class="col-3 btn btn-lg btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></button>
 									</div>
 								</div>
 							</div>
@@ -145,8 +146,8 @@
 									<div class="text-center">
 										<img src="images/gss-asset-20.png" class="img-fluid col-lg-8 col-sm-8" width="1000" alt="Global Sensor Systems Non-Automatic Braking System">
 									</div>
-									<h2 class="text-center pt-4 text-black">Non-Automatic</h2>
-									<div class="col-xl-10 offset-xl-1 text-black">
+									<h2 class="text-center pt-4 text-dark">Non-Automatic</h2>
+									<div class="col-xl-10 offset-xl-1 text-dark">
 										<p>Like our automatic braking systems, our non-automatic braking systems are also simple to install, simple to learn, and simple to use!</p>
 										<p>The non-automatic braking system has less parts making it easier to use than the automatic braking system; however, it’s missing some key features.</p>
 
@@ -178,7 +179,7 @@
 												<a href="#">4</a>
 											</div>
 										</div>
-										<button class="col-3 btn btn-lg btn-outline-dark"><i class="fa-solid fa-cart-shopping"></i></button>
+										<button class="col-3 btn btn-lg btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></button>
 									</div>
 								</div>
 							</div>
@@ -191,7 +192,7 @@
 					<div class="row gx-5 gy-4 py-5">
 							<div class="col text-center">
 								<div class="col-xl-10 offset-xl-1">
-									<h2 class="text-black">Missing a piece that needs replacing? We’ve got you covered!</h2>
+									<h2 class="text-dark">Missing a piece that needs replacing? We’ve got you covered!</h2>
 									<p><a class="btn btn-lg btn-outline-dark mt-3" href="#">REPLACEMENT PARTS</a></p>
 								</div>
 							</div>
@@ -200,11 +201,23 @@
 							</div>
 							<div class="col text-center">
 								<div class="col-xl-10 offset-xl-1">
-								<h2 class="text-black">Check out our manuals for more information on how to use and install our products!</h2>
+								<h2 class="text-dark">Check out our manuals for more information on how to use and install our products!</h2>
 								<p><a class="btn btn-lg btn-outline-dark mt-3" href="#">MANUALS</a></p>
 								</div>
 							</div>
 					</div>
+				</div>
+			</section>
+
+			<!-- Shopping Cart-->
+			<section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header bg-yellow">
+				  <h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+				  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body bg-black text-light-grey">
+				  <p>Your cart is empty</p>
+				  <p><a class="btn btn-outline-light" href="#" data-bs-dismiss="offcanvas">CONTINUE SHOPPING</a></p>
 				</div>
 			</section>
 
