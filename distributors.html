@@ -40,6 +40,7 @@
 			<nav id="main-nav" class="navbar navbar-expand-xl fixed-top bg-light">
 				<div class="container-fluid">
 				  <a class="navbar-brand" href="index.html"><img class="logo" src="images/gss-logo.svg" height="40" alt="GSS logo"></a>
+				  <a href="#main" class="visually-hidden-focusable text-black">Skip to main content</a>
 				  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-icon"></span>
 				  </button>
@@ -58,7 +59,7 @@
 						<a class="nav-link" href="contact.html">CONTACT</a>
 					  </li>
 					  <li class="nav-item" id="kart">
-						<a class="nav-link" href="#"><i class="fa-solid fa-cart-shopping"></i></a>
+						<a class="nav-link" href="#" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-cart-shopping"></i><span class="fa-sr-only">Shopping Cart</span></a>
 					  </li>
 					</ul>
 				  </div>
@@ -66,7 +67,7 @@
 			  </nav>
 		</header>
 		
-		<main>
+		<main id="main">
 			<section class="bg-white section-padding">
 				<div class="container distributor">
 					<div class="row gx-5 justify-content-between">
@@ -75,7 +76,6 @@
 							<p>Are you ready to stop backing accidents before they happen? Our trusted distributors can assist you with the purchase of our automated braking system. Based throughout the United States and Canada, our distributors can assist you with learning more about our products and finding the right product for your needs. Equipped with the knowledge of our products’ abilities and safety features, we can assure that you’ll be in good hands.</p>
 						</div>
 						<div class="col-lg-5 mb-5">
-							<!--<svg class="bd-placeholder-img bd-placeholder-img-lg img-fluid" width="100%" height="370px" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Responsive image" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666666"></rect><text x="45%" y="50%" fill="#ccc" dy=".3em">IMAGE</text></svg>-->
 							<img src="images/distributors-image.jpg" class="img-fluid" width="1000" alt="Man in safety gear working near truck">
 						</div>
 					</div>
@@ -104,7 +104,7 @@
 						<p>Interested in becoming a Global Sensor Systems distributor? Fill out the contact form below and we will be in touch.</p>
 					</div>
 
-					<form action="" id="distributorForm">
+					<form action="becomeDistributor" id="distributorForm">
 						<div class="row">
 							<div class="form-group col-md-6 mb-3">
 								<label for="distributorName" class="form-label"><strong>Name</strong></label>
@@ -142,7 +142,7 @@
 				</div>
 			</section>
 
-			<section class="bg-yellow section-padding">
+			<section class="bg-light-grey section-padding">
 				<div class="container">
 					<div class="row align-items-center">
 						<div class="col-6">
@@ -156,10 +156,21 @@
 						<div class="col-md">
 							<p><a class="btn btn-lg btn-outline-dark" href="#">FIND RESOURCES</a></p>
 						</div>
-						
+		
 					</div>
 				</div>
+			</section>
 
+			<!-- Shopping Cart-->
+			<section class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+				<div class="offcanvas-header bg-yellow">
+					<h5 class="offcanvas-title" id="offcanvasRightLabel">Shopping Cart</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+				</div>
+				<div class="offcanvas-body bg-black text-light-grey">
+					<p>Your cart is empty</p>
+					<p><a class="btn btn-outline-light" href="#" data-bs-dismiss="offcanvas">CONTINUE SHOPPING</a></p>
+				</div>
 			</section>
 
 		</main>
